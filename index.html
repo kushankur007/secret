@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Invitation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="background"></div>
+
+    <div id="invitation-container">
+      <div id="invitation-banner">
+        <h2>Hii Aheri !!!</h2>
+        <h2>Will you want to go out on a momo date with me?</h2>
+      </div>
+
+      <form id="response-form">
+        <label for="yes-radio">Yes</label>
+        <input type="radio" name="response" value="yes" id="yes-radio" />
+
+        <label for="no-radio">No</label>
+        <input type="radio" name="response" value="no" id="no-radio" />
+      </form>
+
+      <div id="date-form" style="display: none">
+        <h2>Awesome! Let's plan the date.</h2>
+        <form
+          id="date-time-form"
+        >
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+          <br />
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div id="no-response" style="display: none">
+        <h2>😢 Sorry to hear that you're not interested.</h2>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
